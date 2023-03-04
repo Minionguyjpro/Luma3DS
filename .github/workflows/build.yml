@@ -14,13 +14,13 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v3
       
-      - name: Install pip
+      - name: Install python/pip
         run: |
           sudo apt-get update
           sudo apt-get install -y --fix-missing python3-pip
       
       - name: Install firmtool
-        run: pip install -U git+https://github.com/TuxSH/firmtool.git
+        run: /usr/bin/pip install -U git+https://github.com/TuxSH/firmtool.git
         
       - name: Install makerom
         run: |
