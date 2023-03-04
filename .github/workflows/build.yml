@@ -17,9 +17,10 @@ jobs:
       - name: Install lsb_release tool
         run: apt-get update && apt-get install -y lsb-release && apt-get clean all
       
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3'
+      - name: Install Python 3 and pip
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --fix-missing python3-pip
       
       - name: Install firmtool
         run: python3 -m pip install -U git+https://github.com/TuxSH/firmtool.git
