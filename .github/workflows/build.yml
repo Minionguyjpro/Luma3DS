@@ -24,7 +24,7 @@ jobs:
           chmod +x makerom
         
       - name: Create with makerom
-        run: makerom
+        run: make
         
       - name: Upload artifact
         uses: actions/upload-artifact@v3
