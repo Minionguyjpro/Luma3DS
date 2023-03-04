@@ -32,7 +32,7 @@ jobs:
           chmod +x /usr/bin/makerom
         
       - name: Create with makerom
-        run: make
+        run: /usr/bin/makerom
         
       - name: Upload artifact
         uses: actions/upload-artifact@v3
