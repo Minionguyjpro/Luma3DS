@@ -31,8 +31,8 @@ jobs:
           unzip "/tmp/makerom-v0.18.3-ubuntu_x86_64.zip" -d /usr/bin
           chmod +x /usr/bin/makerom
         
-      - name: Create with makerom
-        run: /usr/bin/makerom
+      - name: Create with make
+        run: make
         
       - name: Upload artifact
         uses: actions/upload-artifact@v3
