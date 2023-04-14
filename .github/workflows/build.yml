@@ -24,7 +24,7 @@ jobs:
       with:
         fetch-depth: 0
     - name: safedir
-      run: git config --system --add safe.directory /__w/Luma3DS_3GX/Luma3DS_3GX
+      run: git config --system --add safe.directory /__w/Luma3DS/Luma3DS
     - name: debug
       run: git describe --tags
     - name: Build
